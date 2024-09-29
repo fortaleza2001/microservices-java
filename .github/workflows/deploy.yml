@@ -25,8 +25,9 @@ jobs:
             echo "Esto es una prueba: $USER"
             cd /home/juancarrasquer/proyect/microservices-java
             git pull
-            echo "Puleado"
+            echo "PUll completado"
             chmod +x deploy.sh  # Añade permiso de ejecución a deploy.sh
             echo "Permiso de ejecución añadido a deploy.sh"
+            ./deploy.sh  # Ejecuta el script deploy.sh
+            echo "Ejecucion competa"
           EOF
-
