@@ -23,6 +23,6 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa carras@68.221.120.57 << 'EOF'
             echo "Esto es una prueba: $USER"
-            cd /home/juancarrasquer/proyect/microservices-java
-            git pull
+           sudo cd /home/juancarrasquer/proyect/microservices-java
+           sudo git pull
           EOF
