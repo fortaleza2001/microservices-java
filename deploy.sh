@@ -4,9 +4,9 @@
 mvn clean package
 
 # Asegúrate de que no haya contenedores en ejecución antes de levantar los nuevos
-docker compose down
+sudo docker compose down
 
 # Levantar los servicios con Docker Compose
-docker compose build
+sudo docker compose build
 
-docker compose up -d
+sudo docker compose up -d
