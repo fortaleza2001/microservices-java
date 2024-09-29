@@ -19,8 +19,10 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H 68.221.120.57 >> ~/.ssh/known_hosts
 
-      - name: Test SSH Connection
+      - name: Update Project
         run: |
           ssh -i ~/.ssh/id_rsa carras@68.221.120.57 << 'EOF'
             echo "Esto es una prueba: $USER"
+            cd /home/juancarrasquer/proyect/microservices-java
+            git pull
           EOF
