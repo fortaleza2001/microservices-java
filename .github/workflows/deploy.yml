@@ -25,4 +25,7 @@ jobs:
             echo "Esto es una prueba: $USER"
            cd /home/juancarrasquer/proyect/microservices-java
             git pull
+          echo "puleado"
           EOF
+        
+
